@@ -1,0 +1,15 @@
+@import 'mixin';
+@import 'global';
+@import 'vars';
+@import 'fonts';
+
+// Components import
+@import 'components/header';
+@import 'components/nav';
+@import 'components/shop-nav';
+@import 'components/hero';
+
+
+@import 'components/footer';
+// End Components import
+@import 'media';

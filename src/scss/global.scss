@@ -1,0 +1,64 @@
+@import 'vars';
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost';
+  background-color: $bg-color;
+  color: $main-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost';
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+
+  &:focus {
+    color: inherit;
+  }
+}
+
+.btn-clean {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  padding: 0 40px;
+}

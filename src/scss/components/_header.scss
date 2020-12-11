@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  
+  &__logo {
+    transform: taranslateX(-100%);
+  }
+}
+
+.logo{
+  width: 117px;
+  height: 22px;
+}
