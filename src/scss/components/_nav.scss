@@ -10,30 +10,24 @@
   }
 
   &__link {
-    position: relative;
-    font-size: 15px;
-
-    &:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $main-color;
-      transition: 0.5s all;
-      opacity: 0;
-    }
-
+    color: #fff;
     &_active {
       cursor: text;
+
+      &:after {
+        background-color: $white-color;
+      }
+
       &:after {
         opacity: 1;
       }
     }
 
     &:hover {
+
       &:after {
-        opacity: 1;
+        background-color: $white-color;
       }
     }
   }
-}
+}  

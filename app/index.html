@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>Nike Shop</title>
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="site-container">
+		<header class="header">
+  <div class="container header__container">
+    <nav class="navheader__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Home">
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Shop">
+            Shop
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link_active main__link" title="Elements">
+            Elements
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Blog">
+            Blog
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Page">
+            Page
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="header__logo logo" title="Nike">
+      <img src="../img/logo.svg" alt="Nike">
+    </a>
+    <ul class="header__shop-nav shop-nav">
+      <li class="shop-nav__item">
+        <form action="#" class="shop-nav__form search-form">
+          <button class="search-form__btn btn-reset" title="Find">
+          </button>
+        </form>
+      </li>
+      <li class="shop-nav__item shop-nav__item_user">
+        <a href="#" class="shop-nav__link">
+        </a>
+      </li>
+      <li class="shop-nav__item  shop-nav__item_cart">
+        <a href="#" class="shop-nav__link">
+          <img src="../img/bag-icon.png" alt="cart">
+          <span class="shop-nav__quantity">3</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+		<main class="main">
+			<section class="hero" id="hero">
+  <div class="container hero__container">
+    <div class="banner-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero__offer">
+            <h1 class="hero__title">Just Buy It </br>Big Nike Sale <span class="hero__procent">%</span></h1>
+            <p class="hero__descr">
+              All Sale Items are Final Sale / Free Shipping on All Orders
+            </p>
+          </div>
+          <img src="../img/man.png" class="hero__img" alt="Man">
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__offer">
+            <h1 class="hero__title">Just Present It </br>Big Adidas Sale <span class="hero__procent">%</span></h1>
+            <p class="hero__descr">
+              All Sale Items are Final Sale / Free Shipping on All Orders
+            </p>
+          </div>
+          <img src="../img/woman5.png" class="hero__img" alt="Man">
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__offer">
+            <h1 class="hero__title">Just Get It </br>Big Puma Sale <span class="hero__procent">%</span></h1>
+            <p class="hero__descr">
+              All Sale Items are Final Sale / Free Shipping on All Orders
+            </p>
+          </div>
+          <img src="../img/man3.png" class="hero__img" alt="Man">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="marketing">
+      <div class="marketing__img">
+        <img src="../img/mark-prod-2.jpg" alt="product">
+      </div>
+      <div class="marketing__text">
+        <span class="marketing__descr">
+          Someone purchaed a
+        </span>
+        <h4 class="marketing__title">
+          Faux shearling double-breasted coat
+        </h4>
+        <span class="marketing__price btn">
+          150.00 $
+        </span>
+      </div>
+      <button class="marketing__btn btn-reset">
+        <img class="marketing__close" src="../img/btn-close.png" alt="close">
+      </button>
+    </div>
+  </div>
+</section>
+			<section class="banners" id="banners">
+  <div class="container banners__container">
+    <ul class="banners__list">
+      <li class="banners__item">
+        <div class="banners__content banners__content_womens">
+          <h3 class="banners__title">
+            Women's Best Offers
+          </h3>
+          <a href="#" class="banners__link main__link">
+            Buy Now
+          </a>
+        </div>
+      </li>
+      <li class="banners__item">
+        <div class="banners__content banners__content_mens">
+          <h3 class="banners__title">
+            Men's Best Offers
+          </h3>
+          <a href="#" class="banners__link main__link">
+            Buy Now
+          </a>
+        </div>
+      </li>
+      <li class="banners__item">
+        <div class="banners__content banners__content_all">
+          <h3 class="banners__title">
+            All Offers On This Season
+          </h3>
+          <a href="#" class="banners__link main__link">
+            Buy Now
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+			<section class="main-products" id="main-products">
+  <div class="container main-products__container">
+    <ul class="main-products__nav">
+      <li class="main-products__item">
+        <button class="main-products__btn main-products__btn_active btn-reset main__link main__link_active" data-filter="best-sellers">
+          Best Sellers
+        </button>
+      </li>
+      <li class="main-products__item">
+        <button class="main-products__btn btn-reset main__link" data-filter="new-products">
+          New Products
+        </button>
+      </li>
+      <li class="main-products__item">
+        <button class="main-products__btn btn-reset main__link" data-filter="sale-products">
+          Sale Products
+        </button>
+      </li>
+    </ul>
+    <ul class="main-products__list products-grid">
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <span class="product__price btn">
+            150.00 $
+          </span>          
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-2.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+             NIKE SHINY JACKET
+            </a>
+          </h5>
+          <span class="product__price btn">
+            80.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-3.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE LOGO SWEATPANTS
+            </a>
+          </h5>
+          <span class="product__price btn">
+            120.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-4.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              POLO RALPH LAUREN
+            </a>
+          </h5>
+          <span class="product__price btn">
+            200.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-5.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner down jacket
+            </a>
+          </h5>
+          <span class="product__price btn">
+            90.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-6.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <span class="product__price btn">
+            50.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-7.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE SHINY JACKET
+            </a>
+          </h5>
+          <span class="product__price btn">
+            90.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-8.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE LOGO SWEATPANTS
+            </a>
+          </h5>
+          <span class="product__price btn">
+            80.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-9.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE
+            </a>
+          </h5>
+          <span class="product__price btn">
+            100.00 $
+          </span>
+        </div>
+      </li>
+      <li class="products-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-10.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner down jacket
+            </a>
+          </h5>
+          <span class="product__price btn">
+            60.00 $
+          </span>
+        </div>
+      </li>
+    </ul>
+    <div class="main-products__btn-center">
+      <button class="btn-reset main-products__btn-more">
+        More products
+      </button>
+    </div>
+  </div>
+</section>
+			<section class="shop-banners" id="shop-banners">
+  <div class="container shop-banners__container">
+    <a href="#" class="shop-banners__banner shop-banner shop-banner_brands">
+      <h2 class="shop-banner__title">
+        Choose your Brand 
+      </h2>
+      <span class="shop-banner__text main__link_white btn">Read more</span>
+    </a>
+    <a href="#" class="shop-banners__banner shop-banner shop-banner_run">
+      <h2 class="shop-banner__title">
+        Find your <span>Clors</span>
+      </h2>
+      <span class="shop-banner__text main__link_white btn">Read more</span>
+      <img class="shop-banner__img" src="../img/woman4.png" alt="woman">
+    </a>
+  </div>
+</section>
+		</main>
+
+		<footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__content">
+			<div class="footer__top">
+				<div class="footer__column">
+					<h4 class="footer__title">
+						Customer service
+					</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="tel:+8665972742" class="footer__link main__link">
+								Phone: +866.597.2742
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link main__link">
+								Live chat
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link main__link">
+								About Us
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link main__link">
+								Terms & Conditions
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4 class="footer__title">
+						Company
+					</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href=#" class="footer__link main__link">
+								What We Do
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link main__link">
+								Available Services
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link main__link">
+								Latest Posts
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link main__link">
+								FAQs
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4 class="footer__title">
+						Our newsletter
+					</h4>
+					<form action="#" class="footer__form subscribe-form">
+						<h5 class="subscribe-form__title">
+								Join our list and get 15% off your first purchase!
+						</h5>
+						<label class="subscribe-form__field">
+							<input type="email" required placeholder="E-mail address">
+							<button class="subscribe-form__btn btn-reset btn" type="submit">
+								Subscribe
+							</button>
+						</label>
+					</form>
+					<span class="footer__text">
+						*Don’t worry we don’t spam
+					</span>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__left">
+					<ul class="footer__list list-rights">
+						<li class="list-rights__item">
+							<a href="#" class="list-rights__link main__link">
+								Return Policy
+							</a>
+						</li>
+						<li class="list-rights__item">
+							<a href="#" class="list-rights__link main__link">
+								Privacy Policy
+							</a>
+						</li>
+						<li class="list-rights__item">
+							<a href="#" class="list-rights__link main__link">
+								Privacy Policy
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__right">
+					<ul class="footer__social social">
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="../img/twitter.png" alt="Twitter">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="../img/fb.png" alt="Facebook">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="../img/insta.png" alt="Instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="../img/paint.png" alt="Paint">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

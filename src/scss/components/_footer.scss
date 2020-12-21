@@ -1,0 +1,155 @@
+.footer {
+  padding-top: 55px;
+  color: $white-color;
+  background-color: $green-color;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $black-color;
+    left: 0;
+    bottom: 0;
+    width: 700px;
+    height: 700px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  &__container {
+
+  }
+
+  &__content {
+    padding: 0 260px;
+
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__link {
+    color: $white-color;
+    font-weight: 500;
+    font-size: 12px;
+
+    &:after {
+      background-color: $white-color;
+    }
+
+    &:hover {
+      &:after {
+        background-color: $white-color;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 55px 0;
+    border-top: 1px solid $white-color;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-top: 25px;
+  }
+}
+
+.list-rights {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+  &__link {
+    color: $white-color;
+
+    &:after {
+      background-color: $white-color;
+    }
+
+    &:hover {
+      &:after {
+        background-color: $white-color;
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+
+  &__img {
+    transition: 0.5s all;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.subscribe-form {
+  width: 650px;
+
+  &__title {
+    color: $white-color;
+    margin-bottom: 40px;
+  }
+
+  &__field {
+    display: flex;
+
+    & input {
+      width: 100%;
+      display: inline-block;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: $white-color;
+      border-bottom: 2px solid $white-color;
+      padding-right: 40px;
+
+      &::placeholder {
+        color: rgba($white-color, 0.6);
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}

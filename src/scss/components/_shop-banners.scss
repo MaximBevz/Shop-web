@@ -1,0 +1,50 @@
+.shop-banners {
+  padding: 55px 0px;
+  position: relative;
+
+  &__container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.shop-banner {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: $black-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  z-index: 2;
+
+  &_brands {
+    background: url(../../img/banner-1.jpg)center center/cover no-repeat;
+  }
+
+  &_run {
+    background: url(../../img/banner-2.jpg)right center/cover no-repeat;
+  }
+
+  &__title {
+    color: $white-color;
+
+    & span {
+      color: $gold-color;
+    }
+  }
+
+  &__text {
+    max-width: 140px;
+    margin-top: 20px;
+    background-color: $orange-color;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    max-height: 100%;
+  }
+}

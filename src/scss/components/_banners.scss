@@ -1,0 +1,64 @@
+.banners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 32%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.3s all;
+    z-index: 2;
+
+    &:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+  }
+  
+  &__content {
+    min-height: 290px;
+    padding: 60px 240px 110px 63px;
+
+    &_womens {
+      background: url(../../img/woman2.png);
+      background-repeat: no-repeat;
+      background-position: 305px -25px;
+      background-color: $purple-color;
+      background-size: contain;
+    }
+
+    &_mens {
+      background: url(../../img/man2.png)right bottom/cover no-repeat;
+      background-color: $main-color;
+      background-size: contain;
+      
+      & h3 {
+        color: $white-color;
+      }
+
+      & a {
+        color: $white-color;
+
+        &:hover {
+          &:after {
+            background-color: $white-color;
+          }
+        }
+      }
+    }
+
+    &_all {
+      background: url(../../img/woman.png)right bottom/cover no-repeat;
+      background-color: $green-color;
+      background-size: contain;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}

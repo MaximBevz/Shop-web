@@ -1,28 +1,47 @@
 .shop-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   &__item {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 27px;
+    }
+
+    &_user {
+      background: url(../../img/user-icon.png)center center/cover no-repeat;
     }
   }
 
   &__link {
+    display: inline-block;
     width: 16px;
     height: 16px;
+    &:last-child {
+      display: flex;
+    }
   }
 
   &__quantity {
-    padding: 0 5px;
-    height: 16px;
-    color: #ffffff;
+    display: inline-block;
+    color: $white-color;
     font-size: 10px;
-    font-weight: 700;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
     background-color: $main-color;
     border-radius: 25px;
-    text-align: center;
-    line-height: 16px;
+    margin-left: 3px;
+  }
+}
+
+.search-form {
+  &__btn {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/search-icon.png)center center/cover no-repeat;
   }
 }
