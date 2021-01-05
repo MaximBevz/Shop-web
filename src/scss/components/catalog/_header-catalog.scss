@@ -1,0 +1,14 @@
+.catalog-header {
+
+  & .nav__link {
+    color: $main-color;
+
+    &:after {
+      background-color: $main-color;
+    }
+  }
+
+  & .logo {
+    margin-top: -30px;
+  }
+}

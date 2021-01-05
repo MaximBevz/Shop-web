@@ -1,0 +1,63 @@
+.header {
+  padding-top: 39px;
+  padding-bottom: 39px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    transform: translateX(-110%);
+  }
+
+}
+
+.logo {
+  width: 117px;
+  height: 22px;
+}
+
+.catalog-header {
+  margin-top: 40px;
+}
+
+.free-delivery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: $main-color;
+  color: $white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    color: $white-color;
+  }
+}
+
+.card-page {
+  .header {
+    margin-top: 0;
+    position: static;
+    padding-bottom: 50px;
+  }
+}

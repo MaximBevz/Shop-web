@@ -6,17 +6,32 @@
 
 
 // CUSTOM COMPONENTS STYLES
-@import "./components/header";
-@import "./components/nav";
-@import "./components/shop-nav";
-@import "./components/hero";
-@import "./components/marketin";
-@import "./components/banners";
-@import "./components/main-products";
 @import "./components/product";
-@import "./components/shop-banners";
-@import "./components/footer";
+@import "./components/breadcrumbs";
 
+// FIRST-SCREEN COMPONENTS STYLES
+@import "./components/first-screen/header";
+@import "./components/first-screen/nav";
+@import "./components/first-screen/shop-nav";
+@import "./components/first-screen/hero";
+@import "./components/first-screen/marketin";
+@import "./components/first-screen/banners";
+@import "./components/first-screen/main-products";
+@import "./components/first-screen/shop-banners";
+@import "./components/first-screen/footer";
+
+
+// CATALOG STYLES
+
+@import "./components/catalog/hero-catalog";
+@import "./components/catalog/header-catalog";
+@import "./components/catalog/catalog-filters";
+@import "./components/catalog/footer-catalog";
+
+// CARD STYLES
+
+@import "./components/card/card";
+@import "./components/card/card-slider";
 
 // .burger {
 //   --burger-width: 40px;

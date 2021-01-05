@@ -4,10 +4,23 @@
   text-align: center;
   position: relative;
   background-color: $white-color;
+  overflow: hidden;
+
+  &__prop {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 15px;
+    height: 38px;
+    width: 60px;
+    padding-top: 10px;
+    color: $white-color;
+  }
 
   &__image {
     margin-bottom: 30px;
-    max-width: 340px;
 
     & img {
       object-fit: cover;
@@ -39,11 +52,74 @@
   }
 
   &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  &__new-price {
     max-width: 100px;
     font-size: 13px;
-    display: block;
-    margin-top: 25px;
-    margin-left: auto;
+    display: inline-block;
     background-color: $red-color;
+  }
+
+  &__old-price {
+    max-width: 100px;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 15px;
+    color: $gray-color;
+    text-decoration: line-through;
+  }
+}
+
+.new {
+  background-color: $gold-color;
+}
+
+.best {
+  background-color: $green-color;
+}
+
+.discount{
+  background-color: $red-color;
+}
+
+.sale {
+
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid $gray-color;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all;
+
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+    }
+
+    &_active {
+      background-color: $main-color;
+      color: $white-color;
+    }
   }
 }

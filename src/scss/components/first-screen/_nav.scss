@@ -11,6 +11,11 @@
 
   &__link {
     color: #fff;
+
+    &:after {
+      background-color: $white-color;
+    }
+
     &_active {
       cursor: text;
 

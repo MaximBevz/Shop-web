@@ -1,0 +1,45 @@
+.card-page {
+  & .footer-catalog {
+    margin-top: 100px;
+  }
+}
+
+
+.card {
+  &__change {
+    margin-left: auto;
+  }
+
+  .breadcrumbs {
+    &__list {
+      border-bottom: none;
+    }
+
+    & .card__prev,
+    .card__next {
+      display: inline-block;
+      color: $gray-color;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 10px;
+      transition: 0.5s all;
+
+      &:hover {
+        transition: 0.5s all;
+        color: $main-color;
+      }
+    }
+
+    & .card__next {
+      margin-left: 20px;
+    }
+
+    & .container {
+      display: flex;
+    }
+  }
+
+  & .breadcrumbs__list {
+    padding: 0px 0px 50px;
+  }
+}

@@ -1,0 +1,28 @@
+.card-slider {
+  display: flex;
+
+  &__thumb {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__main {
+    margin-left: 15px;
+  }
+}
+
+.card-top {
+  & .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__left {
+
+  }
+
+  &__right {
+
+  }
+}

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>Nike Shop</title>
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="free-delivery">
+		<p class="free-delivery__text">
+			Free delivery from 60.00 $ and free returns
+		</p>
+		<button class="free-delivery__btn btn-reset">
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	<div class="site-container">
+		<header class="header catalog-header">
+  <div class="container header__container">
+    <nav class="navheader__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Home">
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Shop">
+            Shop
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link_active main__link" title="Elements">
+            Elements
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Blog">
+            Blog
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link main__link" title="Page">
+            Page
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="header__logo logo" title="Nike">
+      <img src="../img/logo.svg" alt="Nike">
+    </a>
+    <ul class="header__shop-nav shop-nav">
+      <li class="shop-nav__item">
+        <form action="#" class="shop-nav__form search-form">
+          <button class="search-form__btn btn-reset" title="Find">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </li>
+      <li class="shop-nav__item shop-nav__item_user">
+        <a href="#" class="shop-nav__link">
+          <i class="fas fa-user-tie"></i>
+        </a>
+      </li>
+      <li class="shop-nav__item  shop-nav__item_cart">
+        <a href="#" class="shop-nav__link">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="shop-nav__quantity quantity">3</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+		<main class="main">
+			<section class="hero-catalog">
+  <div class="container hero-catalog__container">
+    <div class="hero-catalog__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="catalog-slide">
+            <img class="catalog-slide__img" src="../img/catalog-man1.png" alt="">
+            <h3 class="catalog-slide__title">
+              The best thing about new shoes!
+            </h3>
+            <p class="catalog-slide__descr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quaerat.
+            </p>
+            <div class="catalog-slide__links">
+              <a href="#" class="catalog-slide__link catalog-slide__link_white btn">
+                Discovery
+              </a>
+              <a href="#" class="catalog-slide__link catalog-slide__link_orange btn">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="catalog-slide">
+            <img class="catalog-slide__img" src="../img/catalog-woman1.png" alt="">
+            <h3 class="catalog-slide__title">
+              The best thing about new shoes2!
+            </h3>
+            <p class="catalog-slide__descr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quaerat.
+            </p>
+            <div class="catalog-slide__links">
+              <a href="#" class="catalog-slide__link catalog-slide__link_white btn">
+                Discovery
+              </a>
+              <a href="#" class="catalog-slide__link catalog-slide__link_orange btn">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-catalog__pagination swiper-pagination"></div>
+      <div class="slide-btns slide-btn">
+        <div class="slide-btn slide-btn_prev">
+          <i class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div class="slide-btn slide-btn_next">
+          <i class="fas fa-arrow-circle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="catalog" id="catalog">
+				<div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">
+          Shop
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link breadcrumbs__link_active">
+          New arrvals
+        </a>
+      </li>
+    </ul>
+    <div class="card__change">
+  <a href="#" class="card__prev">Prev</a>
+  <a href="#" class="card__next">Next</a>
+</div>
+  </div>
+</div>
+				<div class="catalog-content">
+					<div class="container">
+						<div class="catalog-fliters">
+  <button class="hide-filters btn-reset">Hide filters</button>
+  <div class="catalog-filter catalog-filter_open">
+    <div class="catalog-filter__top">
+      <div class="catalog-filter__caption">
+        <h5 class="catalog-filter__title">Categories</h5>
+        <span class="catalog-filter__quantity quantity">1</span>
+      </div>
+      <span class="catalog-filter__toggle"></span>
+    </div>
+    <div class="catalog-filter__bottom">
+      <ul class="catalog-filter__items">
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="All categories">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              All categories
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Accessories">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Accessories
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Shoes">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Shoes
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Coats">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Coats
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Clothes">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Clothes
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="T-Shirt">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              T-Shirt
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Summer">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Summer
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Shirts">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Shirts
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Jacket">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Jacket
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Short">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Short
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="catalog-filter">
+    <div class="catalog-filter__top">
+      <div class="catalog-filter__caption">
+        <h5 class="catalog-filter__title">Color</h5>
+        <span class="catalog-filter__quantity quantity">3</span>
+      </div>
+      <span class="catalog-filter__toggle"></span>
+    </div>
+    <div class="catalog-filter__bottom">
+      <ul class="catalog-filter__items">
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="All categories">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              All categories
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Accessories">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Accessories
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Shoes">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Shoes
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Coats">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Coats
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Clothes">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Clothes
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="T-Shirt">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              T-Shirt
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Summer">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Summer
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Shirts">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Shirts
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Jacket">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Jacket
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Short">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Short
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="catalog-filter">
+    <div class="catalog-filter__top">
+      <div class="catalog-filter__caption">
+        <h5 class="catalog-filter__title">Color</h5>
+        <span class="catalog-filter__quantity quantity">3</span>
+      </div>
+      <span class="catalog-filter__toggle"></span>
+    </div>
+    <div class="catalog-filter__bottom">
+      <ul class="catalog-filter__items">
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="All categories">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              All categories
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Accessories">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Accessories
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Shoes">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Shoes
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Coats">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Coats
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Clothes">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Clothes
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="T-Shirt">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              T-Shirt
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Summer">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Summer
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Shirts">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Shirts
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Jacket">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Jacket
+            </span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox" data-text="Short">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">
+              Short
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+						<div class="catalog-grid">
+  <div class="catalog-grid__props catalog-props">
+    <div class="catalog-props__top">
+      <div class="catalog-props__columns catalog-columns">
+        <span class="catalog-columns__text">Column number:</span>
+        <ul class="catalog-columns__list">
+          <li class="catalog-columns__item">
+            <a href="#" class="catalog-columns__link" data-columns="3">
+              3
+            </a>
+          </li>
+          <li class="catalog-columns__item">
+            <a href="#" class="catalog-columns__link catalog-columns__link_active"  data-columns="4">
+              4
+            </a>
+          </li>
+          <li class="catalog-columns__item">
+            <a href="#" class="catalog-columns__link" data-columns="5">
+              5
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="custom-select">
+        <div class="custom-select__top">
+          <div class="custom-select__text">Sort by latest</div> 
+          <i class="fas fa-angle-down custom-select__arrow-down"></i>
+        </div>
+          <div class="custom-select__dropdown">
+            <ul class="custom-select__list">
+              <li class="custom-select__item">Sort by latest</li>
+              <li class="custom-select__item">Sort by price</li>
+              <li class="custom-select__item">Sort by color</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="catalog-props__choise catalog-choise">
+      <button class="btn-reset catalog-choise__clear">
+        Clear all
+      </button>
+    </div>
+    <ul class="catalog-grid__content" data-grid-columns="4">
+      <li class="catalog-grid__item">
+        <div class="product">
+          <span class="product__prop discount">%</span>
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__old-price">
+              200.00 $
+            </span>
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <span class="product__prop best">Best</span>
+          <div class="product__image">
+            <img src="../img/products/product-2.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <span class="product__prop new">New</span>
+          <div class="product__image">
+            <img src="../img/products/product-3.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-4.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-5.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-6.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-7.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <span class="product__prop discount">%</span>
+          <div class="product__image">
+            <img src="../img/products/product-8.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__old-price">
+              100.00 $
+            </span>
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-9.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-10.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="catalog-grid__item">
+        <div class="product">
+          <div class="product__image">
+            <img src="../img/products/product-1.jpeg" alt="">
+          </div>
+          <h5 class="product__title">
+            <a href="#">
+              NIKE Windrunner cotton
+            </a>
+          </h5>
+          <div class="product__price">
+            <span class="product__new-price btn">
+              150.00 $
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="pagination">
+      <li class="pagination__item"><a href="#" class="pagination__link pagination__link_active">1</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">
+          Next
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer-catalog" id="footer-catalog">
+  <div class="container footer__container">
+    <div class="footer__content">
+      <div class="footer__top">
+        <div class="footer__column">
+          <div class="footer__right">
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="../img/twitter.png" alt="Twitter">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="../img/fb.png" alt="Facebook">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="../img/insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="../img/paint.png" alt="Paint">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__left">
+            <ul class="footer__list list-rights">
+              <li class="list-rights__item">
+                <a href="#" class="list-rights__link main__link">
+                  Return Policy
+                </a>
+              </li>
+              <li class="list-rights__item">
+                <a href="#" class="list-rights__link main__link">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="list-rights__item">
+                <a href="#" class="list-rights__link main__link">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column footer__column_flex">
+          <div class="footer__select">
+            <div class="custom-select custom-select_footer">
+              <div class="custom-select__top">
+                <span class="custom-select__caption">Currency</span>
+                <div class="custom-select__text">USD</div>
+                <i class="fas fa-angle-down custom-select__arrow-down"></i>
+              </div>
+              <div class="custom-select__dropdown">
+                <ul class="custom-select__list">
+                  <li class="custom-select__item">USD</li>
+                  <li class="custom-select__item">EUR</li>
+                  <li class="custom-select__item">RUB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__select">
+            <div class="custom-select custom-select_footer">
+              <div class="custom-select__top">
+                <span class="custom-select__caption">Language</span>
+                <div class="custom-select__text">English</div>
+                <i class="fas fa-angle-down custom-select__arrow-down"></i>
+              </div>
+              <div class="custom-select__dropdown">
+                <ul class="custom-select__list">
+                  <li class="custom-select__item">English</li>
+                  <li class="custom-select__item">Russian</li>
+                </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__left">
+          ©2020 Nike All rights reserved
+        </div>
+        <div class="footer__right">
+          <a href="#" class="footer__payments">
+            <img src="../img/payment.png" alt="Payment">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+		
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

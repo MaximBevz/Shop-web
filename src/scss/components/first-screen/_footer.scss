@@ -19,13 +19,12 @@
     z-index: -1;
   }
 
-  &__container {
-
-  }
-
-  &__content {
-    padding: 0 260px;
-
+  &__column {
+    &_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__title {
