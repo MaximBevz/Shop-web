@@ -1,6 +1,6 @@
 .product {
   width: 340px;
-  padding: 15px 15px 25px;
+  padding: 15px 15px 5px;
   text-align: center;
   position: relative;
   background-color: $white-color;
@@ -55,7 +55,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 25px;
   }
 
   &__new-price {
@@ -73,6 +72,15 @@
     color: $gray-color;
     text-decoration: line-through;
   }
+
+  &:hover {
+    .product-custom__price {
+      transform: translateY(-120%);
+    }
+    .product-custom__cart {
+      transform: translateY(-140%);
+    }
+  }
 }
 
 .new {
@@ -87,9 +95,6 @@
   background-color: $red-color;
 }
 
-.sale {
-
-}
 
 .pagination {
   display: flex;
@@ -120,6 +125,28 @@
     &_active {
       background-color: $main-color;
       color: $white-color;
+    }
+  }
+}
+
+.product-custom {
+  overflow: hidden;
+  margin-top: 20px;
+  height: 45px;
+
+  &__price {
+    transition: 0.3s all;
+    height: 45px;
+  }
+
+  &__cart {
+    transition: 0.3s all;
+    width: 80%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    
+    &:hover {
+      box-shadow: none;
     }
   }
 }

@@ -4,27 +4,23 @@
       <div class="card-slider">
         <div class="card-slider__thumbs">
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card2.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card3.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card4.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card5.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card1.jpg" alt="">
           </div>
         </div>
         <div class="card-slider__main">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="../img/main-card.jpg" alt="">
-            </div>
-          </div>
+          <img src="../img/main-card1.jpg" alt="">
         </div>
       </div>
     </div>
@@ -38,11 +34,11 @@
           NIKE WINDRUNNER COTTON
         </h3>
         <div class="card-info__rate">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star"></i>
           <span>2 Reviews</span>
         </div>
         <div class="card-info__price info-price">
@@ -53,41 +49,133 @@
             $165.00
           </div>
         </div>
-        <p class="card-info__desc">
+        <p class="card-info__descr">
           We love the dramatic ruffle details down the sleeve, delicate fabric buttons and polished cuffs.
         </p>
         <div class="card-info__select color-select">
-          <span class="color-select__selected">Color:
+          <p class="color-select__selected">Color:
             <span>Green</span>
-          </span>
+          </p>
           <ul class="color-select__list">
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="red" style="background-color: red;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="orange" style="background-color: orange;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn color-select__btn_active btn-reset" data-color="green" style="background-color: green;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="white" style="background-color: white;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="black" style="background-color: black;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="brown" style="background-color: brown;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="purple" style="background-color: purple;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="gray" style="background-color: gray;"></button>
           </li>
           </ul>
         </div>
-
+        <div class="card-info__select size-select">
+          <p class="size-select__selected">Size:
+            <span>Select a size</span>
+          </p>
+          <ul class="size-select__list">
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">23</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">24</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">25</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">26</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">27</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">28</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">29</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">30</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">31</button>
+            </li>
+          </ul>
+          <button class="size-select__clear btn-reset">
+            <i class="fas fa-times"></i>
+            clear
+          </button>
+        </div>
+        <div class="card-info__stepper stepper">
+          <button class="stepper__btn stepper__btn_minus stepper__btn_disabled">
+            <i class="fas fa-minus"></i>
+          </button>
+          <input type="text" class="stepper__input" value="1" maxlength="5">
+          <button class="stepper__btn stepper__btn_plus">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="card-info__btns">
+          <button class="btn-reset card-info__btn card-info__btn_cart">
+            Add to cart
+          </button>
+          <button class="btn-reset card-info__btn card-info__btn_wishlist">
+            Add to wishlist
+          </button>
+        </div>
+        <div class="card-info__description card-description">
+          <div class="card-description__item">
+            SKU: <span>FW511</span> 
+          </div>
+          <div class="card-description__item">
+            Category: <span>Trousers, Life style</span>
+          </div>
+          <div class="card-description__item">
+           Tags: <span>Designer,</span> Women
+          </div>
+        </div>
+        <div class="card-info__social card-social">
+          <span class="card-social__name">
+            Share:
+          </span>
+          <ul class="card-social__list social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/twitter.png" alt="Twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/fb.png" alt="Facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/insta.png" alt="Instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/paint.png" alt="Paint">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -14,4 +14,12 @@ export default {
   $catalogChoise: document.querySelector('.catalog-choise'),
   $catalogCastomSelect: document.querySelectorAll('.custom-select'),
   $freeDelivery: document.querySelector('.free-delivery__btn'),
+  $colorSelected: document.querySelector('.color-select'),
+  $sizeSelected: document.querySelector('.size-select'),
+  $stepper: document.querySelector('.stepper'),
+  $sliderThumbs: document.querySelector('.card-slider__thumbs'),
+  $sliderImg: document.querySelector('.card-slider__main img'),
+  $cardBottomLinks: document.querySelectorAll('.card-descr__link'),
+  $cardBottomLinks: document.querySelectorAll('.card-descr__link'),
+  $cardRelatedSlider: document.querySelector('.card-related__slider'),
 };

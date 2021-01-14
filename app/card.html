@@ -102,27 +102,23 @@
       <div class="card-slider">
         <div class="card-slider__thumbs">
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card2.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card3.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card4.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card5.jpg" alt="">
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/1.png" alt="">
+            <img src="../img/main-card1.jpg" alt="">
           </div>
         </div>
         <div class="card-slider__main">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="../img/main-card.jpg" alt="">
-            </div>
-          </div>
+          <img src="../img/main-card1.jpg" alt="">
         </div>
       </div>
     </div>
@@ -136,11 +132,11 @@
           NIKE WINDRUNNER COTTON
         </h3>
         <div class="card-info__rate">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star card-info__star_active"></i>
+          <i class="fas fa-star card-info__star"></i>
           <span>2 Reviews</span>
         </div>
         <div class="card-info__price info-price">
@@ -151,44 +147,374 @@
             $165.00
           </div>
         </div>
-        <p class="card-info__desc">
+        <p class="card-info__descr">
           We love the dramatic ruffle details down the sleeve, delicate fabric buttons and polished cuffs.
         </p>
         <div class="card-info__select color-select">
-          <span class="color-select__selected">Color:
+          <p class="color-select__selected">Color:
             <span>Green</span>
-          </span>
+          </p>
           <ul class="color-select__list">
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="red" style="background-color: red;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="orange" style="background-color: orange;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn color-select__btn_active btn-reset" data-color="green" style="background-color: green;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="white" style="background-color: white;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="black" style="background-color: black;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="brown" style="background-color: brown;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="purple" style="background-color: purple;"></button>
           </li>
             <li class="color-select__item">
-              <button class="color-select__btn btn-reset"></button>
+              <button class="color-select__btn btn-reset" data-color="gray" style="background-color: gray;"></button>
           </li>
           </ul>
         </div>
-
+        <div class="card-info__select size-select">
+          <p class="size-select__selected">Size:
+            <span>Select a size</span>
+          </p>
+          <ul class="size-select__list">
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">23</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">24</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">25</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">26</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">27</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">28</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">29</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">30</button>
+            </li>
+            <li class="size-select__item">
+              <button class="size-select__btn btn-reset">31</button>
+            </li>
+          </ul>
+          <button class="size-select__clear btn-reset">
+            <i class="fas fa-times"></i>
+            clear
+          </button>
+        </div>
+        <div class="card-info__stepper stepper">
+          <button class="stepper__btn stepper__btn_minus stepper__btn_disabled">
+            <i class="fas fa-minus"></i>
+          </button>
+          <input type="text" class="stepper__input" value="1" maxlength="5">
+          <button class="stepper__btn stepper__btn_plus">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="card-info__btns">
+          <button class="btn-reset card-info__btn card-info__btn_cart">
+            Add to cart
+          </button>
+          <button class="btn-reset card-info__btn card-info__btn_wishlist">
+            Add to wishlist
+          </button>
+        </div>
+        <div class="card-info__description card-description">
+          <div class="card-description__item">
+            SKU: <span>FW511</span> 
+          </div>
+          <div class="card-description__item">
+            Category: <span>Trousers, Life style</span>
+          </div>
+          <div class="card-description__item">
+           Tags: <span>Designer,</span> Women
+          </div>
+        </div>
+        <div class="card-info__social card-social">
+          <span class="card-social__name">
+            Share:
+          </span>
+          <ul class="card-social__list social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/twitter.png" alt="Twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/fb.png" alt="Facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/insta.png" alt="Instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img class="social__img" src="../img/paint.png" alt="Paint">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+</div>
+					</div>
+					<div class="card-content__bottom">
+						<div class="card-content__bottom">
+  <div class="card-bottom card-bottom__container">
+      <div class="card-descr">
+        <div class="card-descr__left">
+          <ul class="card-descr__list" data-bar>
+            <li class="card-descr__item">
+              <a href="#one" class="card-descr__link card-descr__link_active">
+                Description
+              </a>
+            </li>
+            <li class="card-descr__item">
+              <a href="#two" class="card-descr__link">
+                Additional information
+              </a>
+            </li>
+            <li class="card-descr__item">
+              <a href="#three" class="card-descr__link">
+                Reviews (2)
+              </a>
+            </li>
+            <li class="card-descr__item">
+              <a href="#four" class="card-descr__link">
+                Description
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-descr__right">
+          <div class="card-descr__content card-descr__content_active" data-target="#one">
+            <p>
+              nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+              ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </div>
+          <div class="card-descr__content" data-target="#two">
+            <p>
+              qLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+              unde
+              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+              qui
+              ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>  
+          </div>
+          <div class="card-descr__content" data-target="#three">
+            <p>
+              sLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+              unde
+              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+              qui
+              ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </div>
+          <div class="card-descr__content" data-target="#four">
+            <p>
+              kLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+              unde
+              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+              qui
+              ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p
+          </div>
+        </div>
+      </div>    
+  </div>
+    <div class="card-related">
+      <h2 class="card-related__title">
+        Related Products
+      </h2>
+      <div class="card-related__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product">
+              <span class="product__prop best">Best</span>
+              <div class="product__image">
+                <img src="../img/products/product-2.jpeg" alt="">
+              </div>
+              <h5 class="product__title">
+                <a href="#">
+                  NIKE Windrunner cotton
+                </a>
+              </h5>
+              <div class="product-custom">
+                <div class="product-custom__price">
+                  <div class="product__price">
+                    <span class="product__new-price btn">
+                      90.00 $
+                    </span>
+                  </div>
+                </div>
+                <button class="product-custom__cart btn-reset btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <span class="product__prop best">Best</span>
+              <div class="product__image">
+                <img src="../img/products/product-2.jpeg" alt="">
+              </div>
+              <h5 class="product__title">
+                <a href="#">
+                  NIKE Windrunner cotton
+                </a>
+              </h5>
+              <div class="product-custom">
+                <div class="product-custom__price">
+                  <div class="product__price">
+                    <span class="product__new-price btn">
+                      90.00 $
+                    </span>
+                  </div>
+                </div>
+                <button class="product-custom__cart btn-reset btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <span class="product__prop best">Best</span>
+              <div class="product__image">
+                <img src="../img/products/product-2.jpeg" alt="">
+              </div>
+              <h5 class="product__title">
+                <a href="#">
+                  NIKE Windrunner cotton
+                </a>
+              </h5>
+              <div class="product-custom">
+                <div class="product-custom__price">
+                  <div class="product__price">
+                    <span class="product__new-price btn">
+                      90.00 $
+                    </span>
+                  </div>
+                </div>
+                <button class="product-custom__cart btn-reset btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <span class="product__prop best">Best</span>
+              <div class="product__image">
+                <img src="../img/products/product-2.jpeg" alt="">
+              </div>
+              <h5 class="product__title">
+                <a href="#">
+                  NIKE Windrunner cotton
+                </a>
+              </h5>
+              <div class="product-custom">
+                <div class="product-custom__price">
+                  <div class="product__price">
+                    <span class="product__new-price btn">
+                      90.00 $
+                    </span>
+                  </div>
+                </div>
+                <button class="product-custom__cart btn-reset btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <span class="product__prop best">Best</span>
+              <div class="product__image">
+                <img src="../img/products/product-2.jpeg" alt="">
+              </div>
+              <h5 class="product__title">
+                <a href="#">
+                  NIKE Windrunner cotton
+                </a>
+              </h5>
+              <div class="product-custom">
+                <div class="product-custom__price">
+                  <div class="product__price">
+                    <span class="product__new-price btn">
+                      90.00 $
+                    </span>
+                  </div>
+                </div>
+                <button class="product-custom__cart btn-reset btn">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="related-pagination"></div>
+      </div>
+    </div>
 </div>
 					</div>
 				</div>

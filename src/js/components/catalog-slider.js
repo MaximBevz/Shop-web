@@ -18,4 +18,15 @@ const catalogSwiper = new Swiper(vars.$catalogSlider, {
   }
 
   // If we need pagination
-})
+});
+
+const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 40,
+  // If we need pagination
+  pagination: {
+    el: '.related-pagination',
+    clickable: true
+  },
+});

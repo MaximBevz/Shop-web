@@ -1,0 +1,303 @@
+.card-top {
+  margin-bottom: 100px;
+}
+
+.card-info {
+
+  &__prop {
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  &__title {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  &__rate {
+    margin-bottom: 25px;
+
+    & span {
+      color: $gray-color;
+      font-size: 13px;
+      margin-left: 8px;
+    }
+  }
+
+  &__star {
+    color: $gray-color;
+
+    &_active {
+      color: $green-color;
+    }
+  }
+
+  &__descr {
+    font-size: 14px;
+    color: $gray-color;
+    margin-bottom: 60px;
+  }
+
+  &__stepper {
+    margin-top: 60px;
+  }
+
+  &__btns {
+    max-width: 420px;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    padding: 26px 0;
+
+    &_cart {
+      color: $white-color;
+      background-color: $main-color;
+      transition: 0.3s all;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: 0.3s all;
+      }
+    }
+
+    &_wishlist {
+      color: $main-color;
+      background-color: $white-color;
+      transition: 0.3s all;
+
+      &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: 0.3s all;
+      }
+    }
+  }
+}
+
+.info-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+
+  &__current {
+    font-size: 24px;
+    font-weight: 700;
+    color: $black-color;
+  }
+
+  &__old {
+    font-size: 16px;
+    color: $gray-color;
+    margin-left: 22px;
+    text-decoration: line-through;
+  }
+}
+
+.color-select {
+  margin-bottom: 30px;
+
+  &__selected {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: $gray-color;
+    margin-bottom: 20px;
+
+    & span {
+      color: $main-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+
+  &__btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid $grayLight-color;
+      transform: translate(-50%, -50%);
+      transition: 0.3s all;
+    }
+
+    &:hover {
+      &:before {
+        border: 1px solid $main-color;
+        transition: 0.3s all;
+      }
+    }
+
+    &_active {
+      &:before {
+        border: 1px solid $main-color;
+        transition: 0.3s all;
+      }
+    }
+  }
+}
+
+.size-select {
+
+  &__selected {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: $gray-color;
+    margin-bottom: 15px;
+
+    & span {
+      color: $main-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__btn {
+    width: 42px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    color: $gray-color;
+    transition: 0.3s all;
+    font-size: 13px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $grayLight-color;
+      transition: 0.3s all;
+    }
+
+    &:hover {
+      transition: 0.3s all;
+      color: $main-color;
+
+      &:before {
+        border: 1px solid $main-color;
+        transition: 0.3s all;
+      }
+    }
+
+    &_active {
+      color: $main-color;
+
+      &:before {
+        border: 1px solid $main-color;
+        transition: 0.3s all;
+      }
+    }
+  }
+
+  &__clear {
+    text-transform: uppercase;
+    color: $red-color;
+    font-size: 10px;
+    display: none;
+  }
+}
+
+.stepper {
+  display: flex;
+  height: 58px;
+  border: 1px solid $grayLight-color;
+  max-width: 420px;
+
+  &__input {
+    border: none;
+    height: 100%;
+    text-align: center;
+    flex-grow: 1;
+    outline: none;
+  }
+
+  &__btn {
+    height: 100%;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $white-color;
+    cursor: pointer;
+    font-size: 16px;
+
+    &_disabled {
+      color: $gray-color;
+      pointer-events: none;
+    }
+  }
+}
+
+.card-description {
+  margin: 60px 0px 20px;
+  max-width: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    font-weight: 700;
+    font-size: 10px;
+    color: $gray-color;
+    text-transform: uppercase;
+
+    & span {
+      color: $main-color;
+    }
+  }
+
+}
+
+.card-social {
+  display: flex;
+  max-width: 210px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name {
+    color: $gray-color;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}

@@ -25,8 +25,43 @@
 
   &__pagination {
     z-index: 10;
-    left: 50%!important;
-    transform: translateX(-50%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    & .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+    }
+
+    & .swiper-container-horizontal>.swiper-pagination-bullets {
+      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    & .swiper-pagination-bullet-active {
+      background-color: $green-color;
+      height: 16px;
+      width: 16px;
+      position: relative;
+      opacity: 1;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: $black-color;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   } 
 }
 
