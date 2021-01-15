@@ -46,6 +46,7 @@ body {
   font-family: "Jost", sans-serif;
   position: relative;
   background-color: $bg-color;
+  overflow-anchor: none;
 }
 
 img {
@@ -179,9 +180,56 @@ ul {
 
 .to-top {
   position: fixed;
+  display: none;
   right: 60px;
-  bottom: 10%;
+  bottom: 170px;
   font-size: 36px;
   color: $green-color;
+  animation: arrow-jump 2s infinite;
+}
+
+@keyframes arrow-jump {
+  0% {
+    transform: translateY(0px)
+  }
+  50% {
+    transform: translateY(-30px)
+  }
+  10% {
+    transform: translateY(0px)
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid $gray-color;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all;
+
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+    }
+
+    &_active {
+      background-color: $main-color;
+      color: $white-color;
+    }
+  }
 }
 

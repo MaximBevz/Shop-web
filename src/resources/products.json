@@ -1,0 +1,136 @@
+[
+   {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-1.jpeg",
+    "status": "best",
+    "oldPrice": "100"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-2.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-3.jpeg",
+    "oldPrice": "120",
+    "status": "sale"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-4.jpeg"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-5.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-6.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-7.jpeg",
+    "oldPrice": "120",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-8.jpeg",
+    "status": "best"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-9.jpeg",
+    "oldPrice": "120"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-10.jpeg",
+    "status": "best"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-10.jpeg",
+    "oldPrice": "160",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-1.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-1.jpeg"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-2.jpeg",
+    "status": "best"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-3.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-4.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-5.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-6.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-7.jpeg"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-8.jpeg",
+    "status": "best"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-9.jpeg",
+    "status": "new"
+  },
+  {
+    "title": "NIKE WINDRUNNER COTTON",
+    "newPrice": "90",
+    "image": "../img/products/product-10.jpeg",
+    "status": "new"
+  }
+
+]

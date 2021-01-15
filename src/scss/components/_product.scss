@@ -20,7 +20,8 @@
   }
 
   &__image {
-    margin-bottom: 30px;
+    padding: 30px 0px;
+    transition: 0.5s all;
 
     & img {
       object-fit: cover;
@@ -74,6 +75,10 @@
   }
 
   &:hover {
+    .product__image {
+      transform: scale(1.1);
+      transition: 0.5s all;
+    }
     .product-custom__price {
       transform: translateY(-120%);
     }
@@ -91,42 +96,8 @@
   background-color: $green-color;
 }
 
-.discount{
+.sale{
   background-color: $red-color;
-}
-
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__item {
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
-
-  &__link {
-    display: inline-block;
-    padding: 15px;
-    border: 1px solid $gray-color;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.5s all;
-
-    &:hover {
-      background-color: $main-color;
-      color: $white-color;
-    }
-
-    &_active {
-      background-color: $main-color;
-      color: $white-color;
-    }
-  }
 }
 
 .product-custom {

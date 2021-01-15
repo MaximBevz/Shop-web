@@ -44,6 +44,7 @@ if (document.querySelector('.catalog')) {
         let text = el.querySelector('.custom-checkbox__text').textContent;
 
         vars.$catalogChoise.insertAdjacentHTML('afterbegin', createChoiseItem(text));
+
       } else {
         el.querySelector('.custom-checkbox').classList.remove('custom-checkbox_active');
 
@@ -51,6 +52,8 @@ if (document.querySelector('.catalog')) {
 
         document.querySelector(`[data-choise-text=${text}]`).remove();
       }
+
+      el.closest('.catalog-filter').querySelector('.catalog-filter__quantity').textContent = el.closest('.catalog-filter__items').querySelectorAll('.custom-checkbox_active').length;
 
       let activeCheckboxes = document.querySelectorAll('.custom-checkbox_active');
 
@@ -77,6 +80,10 @@ if (document.querySelector('.catalog')) {
         if (!el.classList.contains('catalog-choise__clear')) {
           el.remove();
         }
+
+        document.querySelectorAll('.catalog-filter__quantity').forEach(el => {
+          el.textContent = '0';
+        });
 
         vars.$catalogFilterItems.forEach(el => {
           el.querySelector('input').checked = false;

@@ -17,7 +17,7 @@ const customSelect = () => {
 
 if(document.querySelector('.catalog')) {
 
-  vars.$catalogFilterItems.forEach(el => {
+  vars.$catalogFiltersTop.forEach(el => {
     el.addEventListener('click', (e) => {
       e.currentTarget.closest('.catalog-filter').classList.toggle('catalog-filter_open');
     });

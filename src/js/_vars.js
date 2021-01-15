@@ -3,6 +3,7 @@ export default {
   $document: document,
   $html: document.documentElement,
   $body: document.body,
+  $toTop: document.querySelector('.to-top'),
   $bannerSlider: document.querySelector('.banner-slider'),
   $marketing: document.querySelector('.marketing'),
   $catalogSlider: document.querySelector('.hero-catalog__slider'),
@@ -19,7 +20,6 @@ export default {
   $stepper: document.querySelector('.stepper'),
   $sliderThumbs: document.querySelector('.card-slider__thumbs'),
   $sliderImg: document.querySelector('.card-slider__main img'),
-  $cardBottomLinks: document.querySelectorAll('.card-descr__link'),
   $cardBottomLinks: document.querySelectorAll('.card-descr__link'),
   $cardRelatedSlider: document.querySelector('.card-related__slider'),
 };
